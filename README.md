@@ -63,13 +63,6 @@ sudo apt-get update
 sudo apt-get install -y ffmpeg libsox-dev
 ```
 
-#### macOS
-```bash
-# Install FFmpeg and libsox-dev through Homebrew
-brew update
-brew install ffmpeg sox
-```
-
 > Note: For CUDA 12.x and cuDNN 9 installation, please follow NVIDIA's official documentation for your specific operating system.
 
 ## Installation
