@@ -26,6 +26,8 @@ uv run main.py --audio-file ./hello-world.mp3 --diarize
 }
 ```
 
+You can evaluate the word timing accuracy with: https://tylerkahn.github.io/word-timing-app/
+
 A toolkit for audio processing that performs speech transcription, forced alignment, and speaker diarization using state-of-the-art deep learning models (faster whisper, NVIDIA NeMo diarization, and ctc forced alignment using MMS-300m).
 
 Run via cli, as a local api, or deploy to [beam.cloud](https://beam.cloud)
