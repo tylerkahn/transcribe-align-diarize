@@ -1,5 +1,31 @@
 # Transcribe-Align-Diarize
 
+```bash
+uv run main.py --audio-file ./hello-world.mp3 --diarize
+```
+
+```json
+{
+  "words": [
+    {
+      "speaker": 0,
+      "start": 0.32,
+      "end": 0.74,
+      "word": "hello",
+      "confidence": 0.98
+    },
+    {
+      "speaker": 1,
+      "start": 0.86,
+      "end": 1.06,
+      "word": "world",
+      "confidence": 0.95
+    }
+  ],
+  "detected_language": "en"
+}
+```
+
 A toolkit for audio processing that performs speech transcription, forced alignment, and speaker diarization using state-of-the-art deep learning models (faster whisper, NVIDIA NeMo diarization, and ctc forced alignment using MMS-300m).
 
 Run via cli, as a local api, or deploy to [beam.cloud](https://beam.cloud)
