@@ -127,7 +127,7 @@ curl -X POST "http://localhost:8000/transcribe" \
 curl -X POST "http://localhost:8000/force-align" \
   -H "Content-Type: application/json" \
   -d '{
-    "url": "https://example.com/audio.mp3",
+    "audio_base64": "UklGRgZrAgBXQVZFZm10IBAAA...",
     "diarize": true,
     "transcript": "This is the text that needs to be aligned with the audio."
   }'
