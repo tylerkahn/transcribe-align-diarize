@@ -1,0 +1,18 @@
+[project]
+name = "transcribe-align-diarize"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "whisper-diarization",
+    "numpy (>=1.24.3,<2.0.0)",
+    "faster-whisper",
+    "beam-client>=0.2.153",
+    "torchaudio>=2.6.0",
+    "torch>=2.7.0",
+    "fastapi[standard]>=0.115.12",
+]
+
+[tool.uv.sources]
+whisper-diarization = { git = "https://github.com/tylerkahn/whisper-diarization.git" }
