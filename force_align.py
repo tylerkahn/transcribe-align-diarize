@@ -27,7 +27,7 @@ def predict(
   diarize=False,
   model_cache_dir: str | None = "./.model-cache",
   alignment_batch_size: int = 4,
-  load_models_func: Callable[[str, Optional[str]], Tuple[Type[DiarizationPipeline], Any, Any]] = load_models,):
+  load_models_func: Callable[[str], Tuple[Type[DiarizationPipeline], Any, Any]] = load_models,):
     (pipeline, alignment_model, alignment_tokenizer) = load_models_func(model_cache_dir)
 
     pipeline.TEMP_DIR = mkdtemp()
