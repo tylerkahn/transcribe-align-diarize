@@ -1,7 +1,7 @@
 # Transcribe-Align-Diarize
 
 ```bash
-uv run main.py --audio-file ./hello-world.mp3 --diarize
+uv run main.py --audio-file ./apples.mp3 --diarize
 ```
 
 ```json
